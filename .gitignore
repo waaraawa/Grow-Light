@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# KiCad user-specific settings
+*.kicad_prl
+
+# KiCad lock files
+*.lck
+~*.lck
+
+# KiCad automatic backups
+*-backups/
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# KiCad generated cache
+fp-info-cache
+
+# Generated manufacturing outputs
+gerber/

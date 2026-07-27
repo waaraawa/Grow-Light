@@ -2,8 +2,9 @@
 
 ## Current Design Summary
 
-- Board version: `v1.0.2` (`2026-07-11`)
-- Manufacturing direction: Direct production as a `1-layer Aluminum MCPCB`, without a preliminary FR4 prototype
+- Current KiCad design: `v1.0.3` (`2026-07-27`)
+- Manufacturing order version: `v1.0.2` (`2026-07-11`)
+- Manufacturing direction: Direct production as a `1-layer Aluminum MCPCB`
 - Board outline: 80 mm diameter circle
 - Power input: 12 V from a USB-C PD trigger board
 - Available supply: 12 V, up to approximately 1.5 A
@@ -61,7 +62,7 @@
 - The 2010 resistor bodies act as physical jumpers to avoid routing crossings on the 1-layer board.
 - `F.Cu` copper around the LEDs provides both electrical connectivity and local heat spreading.
 - There are no `B.Cu` tracks or zones.
-- FR4-style thermal vias are not used. Heat transfers through the MCPCB dielectric layer into the aluminum core.
+- Thermal vias are not used. Heat transfers through the MCPCB dielectric layer into the aluminum core.
 - The latest Gerber package contains `F.Cu`, `F.Mask`, `F.Silkscreen`, `Edge.Cuts`, and NPTH drill data.
 - There are no plated through holes, and the current `PTH.drl` contains no drill coordinates.
 
@@ -81,7 +82,7 @@
 
 | Item | Quantity | Recommended Specification | Notes |
 |---|---:|---|---|
-| Aluminum cup | 1 | Daiso medium aluminum makgeolli cup | Verify the actual contact area with the 80 mm PCB |
+| Aluminum cup | 1 | [Daiso medium aluminum makgeolli cup](https://www.daisomall.co.kr/pd/pdr/SCR_PDR_0001?pdNo=58656) | Verify the actual contact area with the 80 mm PCB |
 | Thermal interface | 1 | Electrically non-conductive `UPSIREN UTP-8` | Compress into a thin, uniform layer |
 | M3 fastener sets | 6 | M3 screws, washers, and nuts | Corresponding to the six 3.2 mm NPTH holes |
 | M3 insulation parts | 6 | Nylon shoulder washers or insulating washers | Prevent contact between fasteners and PCB copper |
@@ -112,4 +113,3 @@
 6. Apply power briefly at first and verify the total current and illumination of every string.
 7. After 10 to 15 minutes of operation, check the temperatures of the MCPCB and aluminum cup.
 8. If the temperature is excessive, increase the resistor values or reduce the supply power.
-

@@ -51,13 +51,13 @@ The next step is to prepare the components and assembly equipment.
 - [ ] Decide whether to adjust resistor values based on measured current and temperature.
 - [ ] If diffuser lenses are used, verify the 8 mm x 8 mm clearance and actual mechanical interference.
 - [ ] Verify the long-term durability of the cable grommet and external bracket.
-- [ ] Consider an independent FR4 derivative only if a comparison experiment or separate use case arises.
 
 ## Current Status
 
 - Current phase: `MCPCB ordered / awaiting production and delivery`
 - Manufacturing type: `1-layer Aluminum MCPCB`
-- Board version: `v1.0.2` (`2026-07-11`)
+- Current KiCad design: `v1.0.3` (`2026-07-27`)
+- Manufacturing order version: `v1.0.2` (`2026-07-11`)
 - Board outline: 80 mm diameter circle
 - Power: 12 V USB-C PD trigger board
 - LED configuration: 20 red LEDs and 3 blue LEDs
@@ -66,9 +66,18 @@ The next step is to prepare the components and assembly equipment.
 - Final ordered Gerber: `gerber/grow light gerber 1.0.2 2026-0711.zip`
 - DRC: 0 active errors, 0 active warnings, and 1 graphic-related exclusion
 
-The medium aluminum cup was evaluated first, and the board design began after selecting an 80 mm diameter. The `v1.0.2` Gerber manufacturing files were inspected and used to order the MCPCB. The KiCad stackup metadata was then updated to match the order specification. There are no active DRC errors or warnings; the only exclusion is for the unavailable library source of a board-embedded silkscreen graphic.
+The medium aluminum cup was evaluated first, and the board design began after selecting an 80 mm diameter. The `v1.0.2` Gerber manufacturing files were inspected and used to order the MCPCB. The current `v1.0.3` KiCad design adds silkscreen guides around the mounting and cable holes but has not been released as a manufacturing package. There are no active DRC errors or warnings; the only exclusion is for the unavailable library source of a board-embedded silkscreen graphic.
 
 ## Completed History
+
+### 2026-07-27 — v1.0.3 Silkscreen and Documentation Update
+
+- [x] Added `F.Silkscreen` guides around the six M3 mounting holes.
+- [x] Added an `F.Silkscreen` guide around the central 5.3 mm cable hole.
+- [x] Updated the board silkscreen version and date to `v1.0.3 2026-07-27`.
+- [x] Reran `Inspect -> Design Rules Checker` and confirmed 0 active errors, 0 active warnings, and 0 unconnected pads.
+- [x] Added the project README and `v1.0.2` design preview images.
+- [x] Documented the direct Aluminum MCPCB production direction and the aluminum cup product reference.
 
 ### 2026-07-13 — Stackup, DRC, and Order Status Finalized
 
@@ -93,7 +102,6 @@ For any future PCB design or manufacturing-file change, increment the version an
 
 - [x] Established the main `plant led.*` project files as the current source of truth.
 - [x] Deleted the `wrong_via` variant and Dropbox conflict copies.
-- [x] Updated documentation that still described the obsolete FR4 stage to reflect the current MCPCB design.
 - [x] Standardized the project instruction filename as `AGENTS.md`.
 - [x] Moved datasheets into `references/datasheets/`.
 - [x] Moved reference images into `references/images/` and cleaned up their filenames.
@@ -123,7 +131,5 @@ For any future PCB design or manufacturing-file change, increment the version an
 - [x] Checked the six M3 holes and central cable hole for interference with the cup geometry.
 - [x] Checked the available contact area between the PCB and cup.
 - [x] Reviewed the external bracket and M3 fastening structure.
-- [x] The original plan was `2-layer FR4 prototype -> 1-layer Aluminum MCPCB`.
-- [x] Changed the plan to skip the FR4 prototype and proceed directly to a 1-layer Aluminum MCPCB.
-- [x] Confirmed that the current design would not use FR4-style `B.Cu` heat-spreading copper or thermal vias.
-
+- [x] Confirmed direct production as a 1-layer Aluminum MCPCB.
+- [x] Confirmed that the design would not use `B.Cu` copper or thermal vias.

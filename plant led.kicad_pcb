@@ -11494,6 +11494,32 @@
 		(layer "Edge.Cuts")
 		(uuid "9497500a-006d-4d4c-855f-92e7232c904f")
 	)
+	(gr_text "-"
+		(at 144.5 95.1 0)
+		(layer "F.SilkS")
+		(uuid "68ec2abd-f25f-4531-9b40-a2331da7164e")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "+"
+		(at 153.3 95.3 0)
+		(layer "F.SilkS")
+		(uuid "8d18a570-b395-4c8c-a4ae-641779015f0f")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "Grow light\nv1.0.3 2026-07-27"
 		(at 133.2 100.7 0)
 		(layer "F.SilkS")

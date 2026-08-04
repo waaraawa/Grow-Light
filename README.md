@@ -2,14 +2,15 @@
 
 A circular 12 V LED board designed for growing plants. The board uses a single-sided, 80 mm aluminum MCPCB with 20 red LEDs and 3 blue LEDs. A [medium Daiso aluminum makgeolli cup](https://www.daisomall.co.kr/pd/pdr/SCR_PDR_0001?pdNo=58656) serves as the heatsink and mechanical structure.
 
-<img src="docs/images/pcb-prototype-v1.0.2.png" alt="Grow Light PCB 3D preview" width="600">
+<img src="docs/images/assembly/5260-final-light-test.jpg" alt="Completed Grow Light operating after assembly" width="600">
 
 ## Project Status
 
 - Current KiCad design: `v1.0.3` (`2026-07-27`)
 - Manufacturing order version: `v1.0.2` (`2026-07-11`)
-- Current phase: awaiting MCPCB production and delivery
+- Current phase: `v1.0.2` assembled, functionally tested, and installed
 - `v1.0.3` change: added `F.Silkscreen` guides around the six M3 mounting holes and the central cable hole
+- Assembly note: the physical `v1.0.2` board currently uses a temporary hand-assembled resistor arrangement pending replacement with correctly sized `5025 Metric (2010 Imperial)` resistors
 - DRC: 0 active errors, 0 active warnings, and 0 unconnected pads
 - Exclusion: one warning for the unavailable source library of an embedded silkscreen graphic
 
@@ -59,11 +60,17 @@ The 2010 resistor bodies act as physical jumpers to complete the single-sided ro
 
 ### Manufactured PCB
 
-A photograph will be added after the MCPCB arrives. It will show the holes, solder mask, silkscreen, and surface quality.
+The physical `v1.0.2` aluminum MCPCB after delivery and initial inspection.
+
+<img src="docs/images/assembly/5213-pcb-received.jpg" alt="Manufactured Grow Light v1.0.2 aluminum MCPCB" width="600">
 
 ### Completed Assembly
 
-A powered-on photograph will be added after the LEDs and aluminum cooling structure have been assembled.
+The assembled light installed in its intended growing area.
+
+<img src="docs/images/assembly/5261-installed-grow-light.jpg" alt="Completed Grow Light installed in the growing area" width="600">
+
+See the [`v1.0.2` build log](docs/build-log-v1.0.2.md) for the complete assembly, hot-plate reflow, aluminum-cup drilling, thermal-interface, testing, and installation process.
 
 ## Assembly and Safety
 
@@ -82,6 +89,7 @@ A powered-on photograph will be added after the LEDs and aluminum cooling struct
 - [`plant led.kicad_pro`](plant%20led.kicad_pro): KiCad project settings
 - [`parts_list.md`](parts_list.md): parts, manufacturing, and assembly specifications
 - [`to-do.md`](to-do.md): production, assembly, and test status
+- [`docs/build-log-v1.0.2.md`](docs/build-log-v1.0.2.md): physical `v1.0.2` manufacturing, assembly, and installation log
 - [`references/datasheets`](references/datasheets): LED datasheets
 
 Manufacturing Gerber files are not included in the repository. The `footprints:` library is also stored in an external directory shared by multiple projects. To open the project in another environment, configure the same shared library path.

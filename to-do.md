@@ -31,24 +31,29 @@ The next step is to prepare the components and assembly equipment.
 
 ### 6. Operating Verification and Results
 
+- [ ] Replace the temporary hand-assembled `2012 Metric (0805 Imperial)` and `3216 Metric (1206 Imperial)` `1R0` resistor combinations with correctly sized `5025 Metric (2010 Imperial)` resistors.
 - [ ] Measure the input voltage and total current at first power-on.
 - [ ] Verify the illumination of each of the four red strings and the one blue string.
+- [ ] Record the current temporary configuration as the thermal baseline. The initial observation was an indoor ambient temperature of approximately 30 °C and a lamp temperature no higher than 34 °C, corresponding to a temperature rise of no more than approximately 4 °C.
 - [ ] Measure the MCPCB and aluminum cup temperatures after 10 and 15 minutes.
 - [ ] Check the PD trigger board and cable temperatures during extended operation.
-- [ ] If the temperature is excessive, increase the resistor values or reduce the supply power.
+- [ ] Test alternative resistor values one configuration at a time, recording input current and temperatures for each test.
+- [ ] If the temperature remains acceptable, evaluate whether lower resistor values can safely provide the desired output. If the temperature becomes excessive, increase the resistor values or reduce the supply power.
 - [ ] Record actual current, temperature, assembly issues, and improvements in the table below.
 
 | Item | Initial Power-On | 10 Minutes | 15 Minutes | Notes |
 |---|---:|---:|---:|---|
+| Ambient temperature |  |  |  |  |
 | Input voltage |  |  |  |  |
 | Total current |  |  |  |  |
 | MCPCB temperature |  |  |  |  |
 | Aluminum cup temperature |  |  |  |  |
+| Temperature rise above ambient |  |  |  |  |
 | PD trigger board temperature |  |  |  |  |
 
 ### Future Improvement Candidates
 
-- [ ] Decide whether to adjust resistor values based on measured current and temperature.
+- [ ] Finalize and document the production resistor values based on the measured current and temperature results.
 - [ ] If diffuser lenses are used, verify the 8 mm x 8 mm clearance and actual mechanical interference.
 - [ ] Verify the long-term durability of the cable grommet and external bracket.
 
